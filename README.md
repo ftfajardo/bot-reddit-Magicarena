@@ -5,10 +5,12 @@ Codes are usually posted on magicArena reddit and redeemed at a fast speed, so i
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for testing purposes.
+Woking in linux and windows
 
 ### Prerequisites
 
-pip3 install pygame
+pip3 install pygame (linux only)
+pip3 install requests 
 
 ### Running
 
