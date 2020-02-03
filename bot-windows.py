@@ -1,6 +1,5 @@
 import json
 import requests
-import pygame.mixer
 from time import sleep
 import winsound
 
