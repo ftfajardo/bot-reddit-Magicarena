@@ -29,7 +29,7 @@ while(True):
 			if tuple_test not in list_Tuples:
 				list_Tuples.append(tuple_test)
 				print("https://www.reddit.com" + all_resp['data']['children'][i]['data']['permalink'])
-				winsound.PlaySound(r"C:\Users\xico\Desktop\music.wav", winsound.SND_ASYNC)
+				winsound.PlaySound(r"music.wav", winsound.SND_ASYNC)
 
 				
 	sleep(30)
