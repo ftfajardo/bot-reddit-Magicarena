@@ -2,6 +2,7 @@ import json
 import requests
 from time import sleep
 import winsound
+import webbrowser
 
 list_Tuples = []
 link = "http://www.reddit.com/r/magicArena/new.json?limit=25"
@@ -27,9 +28,10 @@ while(True):
 			tuple_test = (title,id_post,author_name) 
 			if tuple_test not in list_Tuples:
 				list_Tuples.append(tuple_test)
-				print("https://www.reddit.com" + all_resp['data']['children'][i]['data']['permalink'])
-				winsound.PlaySound(r"music.wav", winsound.SND_ASYNC)
-
+				var = "https://www.reddit.com" + all_resp['data']['children'][i]['data']['permalink']
+				winsound.PlaySound(r"C:\Users\xico\Desktop\music.wav", winsound.SND_ASYNC)
+				webbrowser.open(var)
+				sleep(10)
 				
-	sleep(30)
+	sleep(20)
 			
